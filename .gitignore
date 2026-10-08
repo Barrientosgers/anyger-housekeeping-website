@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Secrets and environment files (never commit these)
+.env
+.env.*
+*.pem
+*.key
+
+# Dependencies and build output (not used yet, here for safety)
+node_modules/
+dist/
+
+# Logs
+*.log
