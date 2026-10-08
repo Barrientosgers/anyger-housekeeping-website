@@ -339,6 +339,42 @@ a:focus-visible, button:focus-visible {
 .center { text-align: center; }
 @media (max-width: 760px) { .steps { grid-template-columns: 1fr; gap: 24px; } }
 
+/* 11. Reviews (testimonials) */
+.reviews { background: var(--cream); }
+.quote-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.quote {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+  padding: 26px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.quote blockquote { margin: 0; }
+.quote p { font-family: var(--font-display); font-size: 1.1875rem; line-height: 1.45; }
+.badge {
+  align-self: flex-start;
+  padding: 3px 8px;
+  border: 1px dashed #8A6A00;
+  border-radius: 6px;
+  background: #FFF1C9;
+  color: #5E4600;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+@media (max-width: 700px) { .quote-grid { grid-template-columns: 1fr; } }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .btn, .card { transition: none; }
