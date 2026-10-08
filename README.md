@@ -72,7 +72,7 @@ Hosted for free on **GitHub Pages**. `.github/workflows/deploy.yml` packages the
 Edit -> git commit -> git push -> GitHub Actions -> live site
 ```
 
-The workflow is currently manual-only; it is switched to run on every push to `main` when the site goes public (steps are in the file's header comment).
+The workflow runs automatically on every push to `main`, and can also be started by hand from the repository's Actions tab.
 
 ## Git workflow
 
