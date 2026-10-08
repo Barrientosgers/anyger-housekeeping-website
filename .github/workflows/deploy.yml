@@ -1,18 +1,13 @@
 # Deploys the site to GitHub Pages (free).
 #
-# NOT LIVE YET: this workflow only runs when started by hand (workflow_dispatch).
-# To publish automatically on every push to main, replace the "on:" block with:
-#
-#   on:
-#     push:
-#       branches: [main]
-#     workflow_dispatch:
-#
-# GitHub Pages must also be set to "GitHub Actions" in
-# Settings -> Pages -> Build and deployment -> Source.
+# Runs automatically on every push to main, and can also be started by hand
+# from the repository's Actions tab. GitHub Pages is set to
+# Settings -> Pages -> Build and deployment -> Source: "GitHub Actions".
 name: Deploy to GitHub Pages
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
