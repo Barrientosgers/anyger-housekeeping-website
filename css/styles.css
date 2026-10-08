@@ -23,8 +23,8 @@
   --blue: #2B6E9E;
   --blue-dark: #215A82;
   --blue-soft: #E3EEF6;
-  --cta: #C4663F;
-  --cta-dark: #A9532F;
+  --cta: #B05830;
+  --cta-dark: #94461F;
   --ink: #23312B;
   --muted: #55655D;
   --line: #E7E1D4;
@@ -385,6 +385,7 @@ a:focus-visible, button:focus-visible {
   color: #fff;
   text-align: center;
 }
+.cta-box .btn:focus-visible { outline-color: #fff; }
 .cta-box h2 { margin-bottom: 14px; font-size: clamp(1.875rem, 4vw, 2.625rem); }
 .cta-box p { max-width: 34em; margin: 0 auto 28px; color: #E3EEF6; }
 @media (max-width: 600px) { .final-cta { padding-block: 24px 56px; } }
