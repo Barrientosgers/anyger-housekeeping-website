@@ -376,6 +376,29 @@ a:focus-visible, button:focus-visible {
 }
 @media (max-width: 700px) { .quote-grid { grid-template-columns: 1fr; } }
 
+/* 12. Final call to action */
+.final-cta { padding-block: 40px 80px; }
+.cta-box {
+  padding: 56px 24px;
+  border-radius: 28px;
+  background: var(--blue);
+  color: #fff;
+  text-align: center;
+}
+.cta-box h2 { margin-bottom: 14px; font-size: clamp(1.875rem, 4vw, 2.625rem); }
+.cta-box p { max-width: 34em; margin: 0 auto 28px; color: #E3EEF6; }
+@media (max-width: 600px) { .final-cta { padding-block: 24px 56px; } }
+
+/* 13. Footer */
+.site-footer { padding-block: 44px 48px; background: var(--ink); color: #D2DCD6; font-size: 0.9375rem; }
+.footer-inner { display: flex; flex-wrap: wrap; gap: 24px 40px; justify-content: space-between; }
+.footer-name { margin-bottom: 4px; color: #fff; font-family: var(--font-display); font-size: 1.25rem; font-weight: 600; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 6px 22px; margin: 0; padding: 0; list-style: none; }
+.footer-links a { display: inline-block; padding-block: 8px; text-decoration: none; }
+.footer-links a:hover { color: #fff; text-decoration: underline; }
+.copyright { width: 100%; padding-top: 18px; border-top: 1px solid #3A4A42; font-size: 0.8125rem; }
+.site-footer a:focus-visible { outline-color: #fff; }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .btn, .card { transition: none; }
