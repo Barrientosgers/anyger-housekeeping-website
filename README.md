@@ -27,7 +27,7 @@ The website explains the business and builds trust. Every "Request a Cleaning" b
 - Self-hosted fonts (no third-party requests)
 - Local SEO: meta tags, Open Graph, `LocalBusiness` JSON-LD, sitemap, robots.txt
 - Accessibility work: semantic landmarks, skip link, visible focus states, contrast checked against WCAG AA, alt text, ordered/unordered lists for real lists
-- Honest content rules: no invented reviews, awards, statistics, or contact details
+- Honest content rules: only real, permitted reviews, and no invented awards, statistics, or contact details
 
 ## Technology
 
@@ -60,7 +60,7 @@ Then open http://localhost:8000. Stop with `Ctrl+C`.
 
 ## Editing content
 
-- **Testimonials:** currently clearly marked samples. Replace them with real, permitted reviews. Instructions are in an HTML comment above the section in `index.html`. Do not publish while any "Sample / placeholder" badge remains.
+- **Testimonials:** real reviews, used with the customers' permission and attributed by first name and last initial. To add one, copy a `<li class="quote">` block in the Reviews section of `index.html` (instructions are in a comment there). Only use a customer's exact words, never invented ones.
 - **Colors and sizes:** change the variables at the top of `css/styles.css`.
 - **Site address:** if the URL changes (renamed repo or custom domain), update it in `index.html` (canonical, Open Graph, JSON-LD), `sitemap.xml`, and `robots.txt`.
 
@@ -86,7 +86,7 @@ Work happens on short-lived feature branches (`feat/...`, `fix/...`, `docs/...`)
 - Accessibility is measurable: contrast ratios, focus states, landmarks, and keyboard use.
 - Technical SEO basics: canonical URLs, Open Graph, structured data.
 - Choosing the simplest tool that solves the problem, and keeping hosting at $0.
-- Honesty in content: placeholders stay labeled until they are real.
+- Honesty in content: placeholders stay labeled until they are replaced with real, permitted content.
 
 ## Credits
 
